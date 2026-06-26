@@ -1,0 +1,1 @@
+# scann to connect device
