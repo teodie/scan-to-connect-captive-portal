@@ -23,3 +23,6 @@ I Change the network file configuration to make as per the documentation for ora
 Alternatively, in order to configure onboard ethernet to eth0 for LAN and USB adapter to eth1 for WAN (vi /etc/config/network):
 
 Hindi ako maka connect sa orange pi using ssh. Turns out openWRT firewall block traffic from WAN Port which is "eth1" so to fix it I add firewall rule that allow traffic from WAN
+
+OpenWrt’s firewall treats the WAN zone as untrusted and blocks all incoming SSH connections coming from it. When your laptop is on your normal home network trying to reach the Orange Pi over the main network, the firewall drops the request.
+
