@@ -1,0 +1,17 @@
+url: 
+http://192.168.0.1/login.html
+
+dashboard password input field:
+id="login-password"
+
+Dashboard Login button:
+id="save"
+
+Wireless settings tab:
+id="wireless"
+
+Wifi password field:
+id="wifiPwd"
+
+Save new password Button:
+id="submit"

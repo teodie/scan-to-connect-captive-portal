@@ -27,3 +27,7 @@ Hindi ako maka connect sa orange pi using ssh. Turns out openWRT firewall block 
 Unable to manually run openNDS with openWRT. Even when enabled it was not running on reboot.
 
 For the meantime I will be abandoning the openNDS with openWRT and will explore automated scraping with selenium and headless chromium.
+
+First issue: I cant login to my orange pi one that I have used for scrapping for my piso wifi monitoring scrapping. I will try to update the shadow file and insert my password on the root
+
+I got the code working with the assist of AI or improve google and stackoverflow. I can now change password. next would be the display and qrcode generating
