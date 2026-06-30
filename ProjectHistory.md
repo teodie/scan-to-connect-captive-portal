@@ -23,3 +23,7 @@ I Change the network file configuration to make as per the documentation for ora
 Alternatively, in order to configure onboard ethernet to eth0 for LAN and USB adapter to eth1 for WAN (vi /etc/config/network):
 
 Hindi ako maka connect sa orange pi using ssh. Turns out openWRT firewall block traffic from WAN Port which is "eth1" so to fix it I add firewall rule that allow traffic from WAN
+
+Opennds is not running on boot, Unable to start it manually.
+
+I will abandon the idea of using openWRT with openNDS for now and will explore scraping and changing password using selenium with headless chromium.
