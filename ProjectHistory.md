@@ -31,3 +31,5 @@ For the meantime I will be abandoning the openNDS with openWRT and will explore 
 First issue: I cant login to my orange pi one that I have used for scrapping for my piso wifi monitoring scrapping. I will try to update the shadow file and insert my password on the root
 
 I got the code working with the assist of AI or improve google and stackoverflow. I can now change password. next would be the display and qrcode generating
+
+Ordered the TFT display yesterday and waiting the part to arrived.
