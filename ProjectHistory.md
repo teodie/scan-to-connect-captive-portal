@@ -33,3 +33,46 @@ First issue: I cant login to my orange pi one that I have used for scrapping for
 I got the code working with the assist of AI or improve google and stackoverflow. I can now change password. next would be the display and qrcode generating
 
 Ordered the TFT display yesterday and waiting the part to arrived.
+
+TFT ST7789 has been recieved and here are the issues I encountered so far:
+- Unable to access orange pi terminal
+I got an issue with the USB to TTL where when I open Putty and open serial comunication I see nothing on the terminal.
+solution: I need to wait for couple of seconds then click enter to see the login text. sometimes needed to type something then enter when enter alone don't work.
+
+- Trying to install packages with to ethernet cable
+I am dumb and trying to install package orangepi.st7789 when there is no ethernet installed. I been copy pasting error code to AI and AI pointed out that it has no internet. Dumb Teodi is responsible.
+
+- Installing the OrangePi.ST7789 took so long since the dependencies of the library on Numpy and Pillow which Unpacking and compiling is processor intensive for 512 RAM of orange pi one.
+
+- Installation crushed since its running for 1hr
+Unplugged and replugged try next approuch on downloading precompiled numpy and pillow package
+
+## Issue:
+The Board I unresponsive 
+## Action Taken:
+Can't access the terminal, tried multiple times. may be the previous installation damage the os or hardware on worst case scenario.
+## Next Action
+Will reflash os and tried again this time install pre compiled numpy which is python3-numpy
+
+I been trying to make it work from 2AM till 9AM I got decent upto testing it out but I think there is an issue with the code pins and my physical wiring.
+
+To summarize what problems I encounter
+- SPI and GPIO permission access
+- Code path miss match when accessing image or gif
+- Armbian have no default SPI and GPIO user groups
+- Trying to run python script outside the virtaul environment. Dumb Teodi
+- Issue with Pillow not being compiled because of missing dependencies 
+- Dont know how to add ram to assist on numpy and pillow unpacking and compilatioin.
+# Allocate a empty 2GB file block named swapfile
+sudo fallocate -l 2G /swapfile
+
+# Lock down the file permissions for core system security
+sudo chmod 600 /swapfile
+
+# Format the empty container file layout specifically into Linux Swap
+sudo mkswap /swapfile
+
+# Dynamically link and load the file into active live system memory
+sudo swapon /swapfile
+
+- system is missing the C development header files for image formats (like JPEG and PNG) that Pillow needs to compile on your 32-bit ARM board (armv7l).
