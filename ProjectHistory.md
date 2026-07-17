@@ -76,3 +76,18 @@ sudo mkswap /swapfile
 sudo swapon /swapfile
 
 - system is missing the C development header files for image formats (like JPEG and PNG) that Pillow needs to compile on your 32-bit ARM board (armv7l).
+
+Ordered wire crimper for my own custom dupont female wire since I suspect and anticipate that wiring will be headache using the cheap china maid wires.
+- I have crimp my own wires
+- Change the wiring and double check the connection and it works right out of the bath.
+
+I just tweak minor details in the code like the path and its working fine.
+
+## Next Goal
+Generate QRcode image:
+able to generate qrcode using qrcode library from python
+Ai/Gemini write the script. able to display it since I dont have enough time to study the code.
+tested on scanning and connecting to wifi network. and currently works.
+
+
+
